@@ -1,0 +1,115 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f9f5f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.recipe-card{
+    background-color: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px;
+    rgba(0,0,0,0.1);
+}
+
+.recipe-card img{
+    width: 100%;
+    border-radius: 8px;
+}
+h1, h2 {
+    color: #b33939;
+}
+.description {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+footer{
+    background-color: #f7f7f7;
+    color: #555;
+    padding: 40px 20px;
+    margin-top: 50px;
+    border-top: 2px solid #e0e0e0;
+    text-align: center;
+    font-family: 'Georgia'serif;
+}
+
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 900px;
+    gap: 30px;
+}
+
+.footer-section{
+    flex: 1;
+    min-width: 220px;
+    padding: 15px;
+}
+
+.footer-section h3{
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    color: #4caf50;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-section h3: :after 
+[
+    ::content'':
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #e0e0e0;
+    margin: 8px auto 0;
+]
+
+.footer-section p,
+.footer-section ul {
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.footer-section ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section a{
+    color: #FF5722;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a :hover {
+    color: #e64a19;
+    text-decoration: underline;
+}
+
+@media(max-width: 768px) {
+    .footer-content{
+        flex-direction: column;
+align-items: center;
+}
+
+.footer-section{
+    text-align: center;
+    margin-bottom: 25px;
+    min-width: 80%;
+}
+
+.footer-section h3: :after {
+    margin-left: auto;
+    margin-right: auto;
+   }
+}
